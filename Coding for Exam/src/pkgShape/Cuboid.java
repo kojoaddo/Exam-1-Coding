@@ -6,7 +6,7 @@ public class Cuboid extends Rectangle {
 	private int iDepth;
 	
 	public Cuboid(int wid, int len, int dep) {
-		super(width, len);
+		super(wid, len);
 		this.iDepth = dep;
 	}
 	public int getDepth() {

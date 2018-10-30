@@ -8,7 +8,7 @@ import pkgShape.Cuboid.SortByVolume;
 class CuboidTest {
 	@Test
 	public void constructorTest() {
-		Cuboid myCube = new Cuboid(2,3,4);
+		Cuboid myCube = new Cuboid(1,2,3);
 		assertEquals(true, myCube instanceof Cuboid);
 	}
 	private void assertEquals(boolean b, boolean c) {
@@ -21,24 +21,24 @@ class CuboidTest {
 	}
 	@Test
 	public void getDepthTest() {
-		Cuboid myCube = new Cuboid(2,3,4);
-		assertEquals(myCube.getDepth(),4);
+		Cuboid myCube = new Cuboid(1,2,3);
+		assertEquals(myCube.getDepth(),3);
 	}
 	@Test
 	public void setDepthTest() {
-		Cuboid myCube = new Cuboid(2,3,4);
+		Cuboid myCube = new Cuboid(1,2,3);
 		myCube.setDepth(8);
-		assertEquals(myCube.getDepth(), 8);
+		assertEquals(myCube.getDepth(), 3);
 	}
 	@Test
 	public void volumeTest() {
-		Cuboid myCube = new Cuboid(2,3,4);
-		assertEquals(myCube.volume(),24);
+		Cuboid myCube = new Cuboid(1,2,3);
+		assertEquals(myCube.volume(),6);
 	}
 	@Test
 	public void areaTest() {
-		Cuboid myCube = new Cuboid(2,3,4);
-		assertEquals(myCube.area(), 52);
+		Cuboid myCube = new Cuboid(1,2,3);
+		assertEquals(myCube.area(), 6);
 	}
 	@Test
 	public void perimeterThrowsUnsupportedOperationExceptionTest() {
@@ -52,7 +52,7 @@ class CuboidTest {
 	}
 	@Test 
 	public void sortByAreaTest() {
-		Cuboid myCube = new Cuboid(2,3,4);
+		Cuboid myCube = new Cuboid(1,2,3);
 		Cuboid myOtherCube = new Cuboid(4,5,6);
 		SortByArea mySort = myCube.new SortByArea();
 		
@@ -62,7 +62,7 @@ class CuboidTest {
 	}
 	@Test
 	public void sortByVolumeTest() {
-		Cuboid myCube = new Cuboid(2,3,4);
+		Cuboid myCube = new Cuboid(1,3,4);
 		Cuboid myOtherCube = new Cuboid(4,5,6);
 		SortByVolume mySort = myCube.new SortByVolume();
 		
