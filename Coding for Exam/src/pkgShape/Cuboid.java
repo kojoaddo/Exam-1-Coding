@@ -5,9 +5,9 @@ import java.util.Comparator;
 public class Cuboid extends Rectangle {
 	private int iDepth;
 	
-	public Cuboid(int width, int length, int depth) {
-		super(width, length);
-		this.iDepth = depth;
+	public Cuboid(int wid, int len, int dep) {
+		super(width, len);
+		this.iDepth = dep;
 	}
 	public int getDepth() {
 		return iDepth;
@@ -26,7 +26,7 @@ public class Cuboid extends Rectangle {
 	}
 	@Override
 	public double perimeter() {
-		throw new UnsupportedOperationException("Cannot compute perimeter of a three-dimensional object");
+		throw new UnsupportedOperationException("Cannot compute perimeter of the 3-D object");
 	}
 	@Override
 	public int compareTo(Object myObject) {

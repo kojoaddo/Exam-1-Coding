@@ -9,6 +9,10 @@ class RectangleTest {
 		Rectangle myRectangle = new Rectangle(2,3);
 		assertEquals(true, myRectangle instanceof Rectangle);
 	}
+	private void assertEquals(int i, double d) {
+		// TODO Auto-generated method stub
+		
+	}
 	@Test
 	public void getLengthTest() {
 		Rectangle myRectangle = new Rectangle(2,3);
@@ -24,6 +28,10 @@ class RectangleTest {
 		Rectangle myRectangle = new Rectangle(2,3);
 		myRectangle.setLength(5);
 		assertTrue(5 == myRectangle.getLength());
+	}
+	private void assertTrue(boolean b) {
+		// TODO Auto-generated method stub
+		
 	}
 	@Test
 	public void setWidthTest() {
