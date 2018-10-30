@@ -29,7 +29,7 @@ public class Rectangle extends Shape {
 	}
 	@Override
 	public double perimeter() {
-		double perimeter = (double) 2 * (iWidth + iLength;
+		double perimeter = (double) 2 * (iWidth + iLength);
 		return perimeter;
 	}
 	public int compareTo(Object myObject) {

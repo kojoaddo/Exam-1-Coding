@@ -1,5 +1,7 @@
 package pkgShape;
 
+import org.junit.Test;
+
 import pkgShape.Cuboid.SortByArea;
 import pkgShape.Cuboid.SortByVolume;
 
@@ -8,6 +10,14 @@ class CuboidTest {
 	public void constructorTest() {
 		Cuboid myCube = new Cuboid(2,3,4);
 		assertEquals(true, myCube instanceof Cuboid);
+	}
+	private void assertEquals(boolean b, boolean c) {
+		// TODO Auto-generated method stub
+		
+	}
+	private void assertEquals(double d, int j) {
+		// TODO Auto-generated method stub
+		
 	}
 	@Test
 	public void getDepthTest() {

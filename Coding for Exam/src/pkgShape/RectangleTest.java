@@ -9,7 +9,15 @@ class RectangleTest {
 		Rectangle myRectangle = new Rectangle(2,3);
 		assertEquals(true, myRectangle instanceof Rectangle);
 	}
+	private void assertEquals(boolean b, boolean c) {
+		// TODO Auto-generated method stub
+		
+	}
 	private void assertEquals(int i, double d) {
+		// TODO Auto-generated method stub
+		
+	}
+	private void assertEquals(int i, int j) {
 		// TODO Auto-generated method stub
 		
 	}
