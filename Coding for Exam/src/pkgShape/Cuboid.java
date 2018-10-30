@@ -29,27 +29,22 @@ public class Cuboid extends Rectangle {
 		throw new UnsupportedOperationException("Cannot compute perimeter of the 3-D object");
 	}
 	@Override
-	public int compareTo(Object myObject) {
-		Cuboid myCuboid = (Cuboid) myObject;
-		return Double.compare(myCuboid.area(),this.area());
+	public int compareTo(Object c) {
+		Cuboid cub1 = (Cuboid) c;
+		return(Double.compare(this.area(), cub1.area()));
 	}
+	
 	class SortByArea implements Comparator<Cuboid>{
-		SortByArea(){
-			
-		}
-		@Override
-		public int compare(Cuboid cuboid1, Cuboid cuboid2) {
-			return cuboid1.compareTo(cuboid2);
+		
+		public int compare(Cuboid c1, Cuboid c2) {
+			return (int) (c1.area()-c2.area());
 		}
 	}
+	
 	class SortByVolume implements Comparator<Cuboid>{
-		SortByVolume(){
-			
+
+		public int compare(Cuboid c1, Cuboid c2) {
+			return (int) (c1.volume()-c2.volume());
 		}
-		@Override
-		public int compare(Cuboid cuboid1, Cuboid cuboid2) {
-			return (int) (cuboid1.volume() - cuboid2.volume());
-		}
-		
 	}
 }
